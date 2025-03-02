@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:background="@drawable/main"
+tools:context=".AddPlayers">
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_box"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER \n PLAYERS NAMES"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#5ED1C4"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/playerOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pink_border"
+        android:drawableLeft="@drawable/icon_cross"
+        android:drawablePadding="3dp"
+        android:hint="Enter player one name"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/blue_200"
+        android:textStyle="italic"
+
+        />
+
+    <EditText
+        android:id="@+id/playerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pink_border"
+        android:drawableLeft="@drawable/icon_zero"
+        android:drawablePadding="10dp"
+        android:hint="Enter player two name"
+        android:maxLines="1"
+        android:padding="13dp"
+        android:textColor="@color/blue_200"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartGameButton"
+        android:layout_marginTop="20dp"
+        android:text="Start Game"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#F6C0C9"
+        android:textSize="20dp"
+        />
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
